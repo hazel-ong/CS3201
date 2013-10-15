@@ -10,10 +10,13 @@ using namespace std;
 #include "PKB.h"
 #include "TNode.h"
 
-int PKB::setProcToAST(PROC p, TNode* r) {
-	return NULL;
-}
 
-TNode* PKB::getRootAST (PROC p){
-	return NULL;
-}
+// Commented to make it compileable
+//
+//int PKB::setProcToAST(PROC p, TNode* r) {
+//	return NULL;
+//}
+//
+//TNode* PKB::getRootAST (PROC p){
+//	return NULL;
+//}

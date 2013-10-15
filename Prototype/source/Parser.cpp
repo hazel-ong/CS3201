@@ -1,6 +1,5 @@
 #pragma once
 
-#include<stdio.h>
 #include <iostream>
 #include <string>
 #include <vector>
@@ -9,29 +8,33 @@ using namespace std;
 
 #include "PKB.h"
 #include "TNode.h"
- 
-class Paser{
+
+class Parser{
 public:
 	//Skeleton for the parser class excluing the assisng, while, if ,call
-	assignFx(){
+	void assignFx(){
 		//Type your code here
 	}
-	whileFx(){
+	void whileFx(){
 		//Type your code here
 	}
-	ifFx(){
+	void ifFx(){
 		//Type your code here
 	}
-	callFx(){
+	void callFx(){
 		//Type your code here
 	}
 	
 	//retrieve the next string of stmt from the input - Melvin
-	getToken(){
+	void getToken(){
 		//Type your code here
 	}
 
-	getCurrentNode(){
+	TNode getCurrentNode(){
 		//Type your code here
+	}
+
+	void parse(string filename) {
+		cout << "hello " << filename;
 	}
 };

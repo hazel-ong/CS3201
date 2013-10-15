@@ -26,6 +26,7 @@
     <ClInclude Include="ASTNode.h" />
     <ClInclude Include="Follows.h" />
     <ClInclude Include="Parent.h" />
+    <ClInclude Include="Parser.h" />
     <ClInclude Include="ProcTable.h" />
     <ClInclude Include="VarTable.h" />
   </ItemGroup>

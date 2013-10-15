@@ -21,7 +21,7 @@ int main(int argc, char* argv[])
 	bool wasSucessful = runner.run();
 
 
-	//getchar();
+	getchar();
 
 	return wasSucessful ? 0 : 1;
 }
