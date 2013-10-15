@@ -3,38 +3,22 @@
 #include "ASTNode.h"
 #include "Parent.h"
 #include "Follows.h"
+#include "PKB.h"
+#include "TNode.h"
 
+class Parser {
 
-class Parser{
 public:
-	Parser(void);	// constructor
-	~Parser(void);	// destructor
+	Parser();
 
-	void assignFx(){
+	~Parser();
 
-	}
-	void whileFx(){
+	void parse(string filename);
 
-	}
-	void ifFx(){
+	void parseProcedure();
 
-	}
-	void callFx(){
+	void parseStatementList();
 
-	}
-
-	//retrieve the next string of stmt from the input - Melvin
-	void getToken(){
-
-	}
-
-	ASTNode getCurrentNode(){
-
-	}
-
-	void parse(string filename) {
-
-	}
-
+	void parseStatement(string statement);
 
 };

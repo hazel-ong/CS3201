@@ -5,11 +5,18 @@ using std::cout;
 // Register fixture into test registry
 CPPUNIT_TEST_SUITE_REGISTRATION(ParserTest);
 
-void ParserTest::setUp() {}
+void ParserTest::setUp() 
+{
+	
+}
 
-void ParserTest::tearDown() {}
+void ParserTest::tearDown() 
+{
+
+}
 
 void ParserTest::testParse()
 {
-	cout << "Hello";
+	Parser parser;
+	parser.parseStatement("x = 5");
 }

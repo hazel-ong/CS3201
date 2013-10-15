@@ -1,6 +1,7 @@
 #pragma once
 
 #include <cppunit/extensions/HelperMacros.h>
+#include <cppunit/config/SourcePrefix.h>
 #include "Parser.h"
 
 class ParserTest : public CPPUNIT_NS::TestFixture
@@ -8,7 +9,7 @@ class ParserTest : public CPPUNIT_NS::TestFixture
 	CPPUNIT_TEST_SUITE(ParserTest);
 	CPPUNIT_TEST(testParse);
 	CPPUNIT_TEST_SUITE_END();
-
+	
 public:
 	void setUp();
 
