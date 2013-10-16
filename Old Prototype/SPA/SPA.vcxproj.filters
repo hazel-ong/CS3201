@@ -1,3 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="DesignExtractor.cpp" />
+    <ClCompile Include="Parser.cpp" />
+    <ClCompile Include="PKB.cpp" />
+    <ClCompile Include="TNode.cpp" />
+    <ClCompile Include="ASTNode.cpp" />
+    <ClCompile Include="Follows.cpp" />
+    <ClCompile Include="Parent.cpp" />
+    <ClCompile Include="ProcTable.cpp" />
+    <ClCompile Include="VarTable.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Parser.h" />
+    <ClInclude Include="PKB.h" />
+    <ClInclude Include="ASTNode.h" />
+    <ClInclude Include="Follows.h" />
+    <ClInclude Include="Parent.h" />
+    <ClInclude Include="ProcTable.h" />
+    <ClInclude Include="VarTable.h" />
+  </ItemGroup>
 </Project>
