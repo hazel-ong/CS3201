@@ -12,13 +12,22 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\source\DesignExtractor.cpp" />
+    <ClCompile Include="..\Source\Follows.cpp" />
+    <ClCompile Include="..\Source\Parent.cpp" />
     <ClCompile Include="..\source\Parser.cpp" />
     <ClCompile Include="..\source\PKB.cpp" />
+    <ClCompile Include="..\Source\ProcTable.cpp" />
     <ClCompile Include="..\source\TNode.cpp" />
+    <ClCompile Include="..\Source\VarTable.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\Source\Follows.h" />
+    <ClInclude Include="..\Source\Parent.h" />
+    <ClInclude Include="..\Source\Parser.h" />
     <ClInclude Include="..\source\PKB.h" />
+    <ClInclude Include="..\Source\ProcTable.h" />
     <ClInclude Include="..\source\TNode.h" />
+    <ClInclude Include="..\Source\VarTable.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{DC21A1EA-D2C6-4D14-A2B4-E025B64BDE81}</ProjectGuid>
