@@ -13,12 +13,15 @@ public:
 
 	~Parser();
 
-	void parse(string filename);
+	void parse(string);
 
 	void parseProcedure();
 
 	void parseStatementList();
 
-	void parseStatement(string statement);
+	void parseStatement(string);
 
+	void getToken(string);
+
+	void getCurrentNode();
 };
