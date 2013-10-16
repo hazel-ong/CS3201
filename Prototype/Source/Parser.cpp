@@ -23,7 +23,9 @@ Parser::~Parser()
 
 int Parser::parse(string filename)
 {
+	parseStatement(filename);
 
+	return 0;
 }
 
 void Parser::parseProcedure()
