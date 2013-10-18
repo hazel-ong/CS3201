@@ -17,6 +17,7 @@
     <ClCompile Include="..\source\Parser.cpp" />
     <ClCompile Include="..\source\PKB.cpp" />
     <ClCompile Include="..\Source\ProcTable.cpp" />
+    <ClCompile Include="..\Source\QueryParser.cpp" />
     <ClCompile Include="..\source\TNode.cpp" />
     <ClCompile Include="..\Source\VarTable.cpp" />
   </ItemGroup>
@@ -26,6 +27,7 @@
     <ClInclude Include="..\Source\Parser.h" />
     <ClInclude Include="..\source\PKB.h" />
     <ClInclude Include="..\Source\ProcTable.h" />
+    <ClInclude Include="..\Source\QueryParser.h" />
     <ClInclude Include="..\source\TNode.h" />
     <ClInclude Include="..\Source\VarTable.h" />
   </ItemGroup>
