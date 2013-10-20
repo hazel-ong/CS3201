@@ -2,9 +2,10 @@
 
 #include <stdio.h>
 #include <iostream>
+#include <sstream>
 #include <string>
 #include <vector>
-
+#include <iterator>
 #include "Parser.h"
 #include "PKB.h"
 #include "TNode.h"
@@ -40,29 +41,33 @@ void Parser::parseStatementList()
 }
 
 void Parser::parseStatement(string statement)
-{
-	cout << "Parsing statement: " << statement << endl;
-
-	/*if (input.find("Procedure")) {
-	}else if(input.find("while")){
-	whileFx();
-	}else if(input.find("if")){
-	ifFx();
-	}else if(input.find('=')){
-	assignFx();
+{	std::vector<std::string> stmtVector = getToken(statement);
+	//cout << "Parsing statement: " << statement << endl;
+	if(statement.find("Procedure")){
+		//procedureFX operations and API called in this
+		//procedure name is @ stmtVector[1];
+	}else if(statement.find("while")){
+		//whileFX operations and API called in this
+		//while-loop ctrl variable is @ stmtVector[1];
+	}else if(statement.find("if")){
+		//ifFX operations and API called in this
+		//if-loop ctrl variable is @ stmtVector[1];
+	}else if(statement.find("=")){
+		//assignFX operations and API called in this
+		//modifies(element) is @ stmtVector[0];
+		//assign expression is @ stmtVector[2];
 	}else{
-	cout << "Invalid input, please try again." <<endl;
-	}*/
+		cout<< "invalid input, please try again." << endl;
+	}
 }
 
-void getToken(string input) 
+vector<string> getToken(string inputStr) 
 {
-	string token;
-
-	while (cin >> token)
-	{
-		// Do whather you want with the tokens
-	}
+	std::stringstream ss(inputStr);
+	istream_iterator<std::string> begin(ss);
+	istream_iterator<std::string> end;
+	std::vector<std::string> tokenVector(begin, end);
+	return tokenVector;
 }
 
 //int main(){
