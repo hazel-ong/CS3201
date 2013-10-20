@@ -20,7 +20,7 @@ public:
 
 	void parseStatement(std::string);
 
-	void getToken(std::string);
+	std::vector<std::string> getToken(std::string);
 
 	void getCurrentNode();
 
