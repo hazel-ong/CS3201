@@ -2,11 +2,11 @@
 
 #include <cppunit/extensions/HelperMacros.h>
 #include <cppunit/config/SourcePrefix.h>
-#include "Parser.h"
+#include "QueryParser.h"
 
-class ParserTest : public CPPUNIT_NS::TestFixture
+class QueryParserTest : public CPPUNIT_NS::TestFixture
 {
-	CPPUNIT_TEST_SUITE(ParserTest);
+	CPPUNIT_TEST_SUITE(QueryParserTest);
 	CPPUNIT_TEST(testParse);
 	CPPUNIT_TEST_SUITE_END();
 	
