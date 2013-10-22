@@ -4,6 +4,7 @@
 #include "Parent.h"
 #include "Follows.h"
 #include "PKB.h"
+#include <cctype>
 
 class Parser {
 
@@ -24,4 +25,9 @@ public:
 
 	void getCurrentNode();
 
+	bool IsNAME(const std::string& token);
+
+	//bool IsLETTER(std::string);
+
+	//bool IsDIGIT(std::string);
 };

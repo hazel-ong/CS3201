@@ -9,6 +9,7 @@
 #include "Parser.h"
 #include "PKB.h"
 #include "TNode.h"
+//#include "ctype.h"
 
 using namespace std;
 
@@ -69,7 +70,7 @@ vector<string> getToken(string inputStr)
 	std::vector<std::string> tokenVector(begin, end);
 	return tokenVector;
 }
-
+ 
 //int main(){
 //	Parser p;
 //	string input;
@@ -79,3 +80,26 @@ vector<string> getToken(string inputStr)
 //		//cout<< "Your input is : " <<input << endl;
 //	return 0;
 //}
+
+bool Parser:: IsNAME(const std :: string& token) //&= pass by reference
+{
+	int tokenLength = token.length();
+	char c;
+	c = token[0];
+	if(isalpha(c))
+	{
+		for(int i = 1; i < tokenLength; i++)
+		{
+			c = token[i];
+			if(!(isalpha(c) || isdigit(c)))
+				return false;
+		}
+	}
+
+}
+/*bool Parser::IsLETTER(char c) {
+        return (c > 64 && c < 91) || (c > 96 && c < 123);       
+}
+bool Parser::IsDIGIT(char c) {
+        return (c > 47 && c < 58);       
+}*/
