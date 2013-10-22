@@ -27,7 +27,5 @@ public:
 
 	bool IsNAME(const std::string& token);
 
-	//bool IsLETTER(std::string);
-
-	//bool IsDIGIT(std::string);
+	
 };

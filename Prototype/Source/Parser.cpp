@@ -9,7 +9,7 @@
 #include "Parser.h"
 #include "PKB.h"
 #include "TNode.h"
-//#include "ctype.h"
+
 
 using namespace std;
 
@@ -97,9 +97,3 @@ bool Parser:: IsNAME(const std :: string& token) //&= pass by reference
 	}
 
 }
-/*bool Parser::IsLETTER(char c) {
-        return (c > 64 && c < 91) || (c > 96 && c < 123);       
-}
-bool Parser::IsDIGIT(char c) {
-        return (c > 47 && c < 58);       
-}*/
